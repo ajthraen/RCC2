@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+import User from '../Components/User.jsx'
 
 function Home() {
     const [users, setUsers] = useState([])
@@ -14,12 +15,19 @@ function Home() {
         fetchUsers();
     }, []);
 
+    const pixels = "3px";
+
     return (
-        <div className="header">
-            {users.length > 0
-                ? <h1>{users.length > 0 && users[0].name}</h1>
-                : <h1>Loading...</h1>
-            }
+        <div>
+            {users.map((user) => (
+                <User 
+                    key={user.id}
+                    id={user.id}
+                    name={user.name}
+                    email={user.email}
+                    username={user.username}
+                />
+            ) )}
         </div>
     );
 }
