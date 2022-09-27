@@ -16,6 +16,7 @@ function Users() {
         fetchUser()
     }, [])
 
+
     return (
         <div>
             <Link to="/">Go Back</Link>
@@ -23,7 +24,6 @@ function Users() {
             <p className='header'>{user.name}</p>
             <p className='header'>{user.email}</p>
             <p className='header'>{user.username}</p>
-            {/* <h1 className='header'>{username}</h1> */}
         </div>
     )
 }
