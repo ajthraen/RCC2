@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -46,8 +54,25 @@
 
 .header {
   padding: 20px;
+  
 }
 
 .links {
   padding: 0 20px 0 20px;
+}
+
+.contactsWrap{
+  display: flex;
+  margin: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contacts{
+  border: 2px solid black;
+  margin: 8px;
+  padding: 8px;
+}
+
+.contactsIn{
+  width: 300px;
 }

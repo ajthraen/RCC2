@@ -18,8 +18,8 @@ function Home() {
 
     function renderUsers() {
         return users.map((user) => (
-                <Link to={`/users/${user.id}`} key={user.id}>
-                    <User 
+                <Link className='contacts' to={`/users/${user.id}`} key={user.id}>
+                    <User
                         id={user.id}
                         name={user.name}
                         email={user.email}
@@ -36,7 +36,7 @@ function Home() {
     const pixels = "3px";
 
     return (
-        <div>
+        <div className='contactsWrap'>
             {users.length ? renderUsers(): renderLoading()}
         </div>
     );

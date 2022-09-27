@@ -1,6 +1,6 @@
 function User({id, name, email, username}) {
     return (
-        <div style={{ border: `2px solid black`}}>
+        <div className='contactsIn'>
             <div>Id: {id}</div>
             <div>Name: {name}</div>
             <div>Email: {email}</div>
