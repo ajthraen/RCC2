@@ -33,7 +33,7 @@ function Home() {
         return <h1>Loading...</h1>
     }
 
-    const pixels = "3px";
+    const pixels = "2px";
 
     return (
         <div className='contactsWrap'>

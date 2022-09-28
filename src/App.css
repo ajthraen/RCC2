@@ -69,6 +69,7 @@
 }
 .contacts{
   border: 2px solid rgb(123, 123, 123);
+  box-shadow: 4px 8px;
   border-radius: 16px;
   background-color: rgb(226, 226, 226);
   margin: 8px;
